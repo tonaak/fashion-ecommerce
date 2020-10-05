@@ -4,22 +4,71 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="banner-slider.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;400&display=swap');
+	</style>
 </head>
 <body>
 	<div class="slideshow-container">
 
 		<div class="slider-img mySlides fade">
 		  <img src="img/banner1.jpg">
+			  <div class="slide-content-container">
+			  		<div class="container">
+				  		<div class="row">
+				  			<div class="col">
+				  				<div class="banner">
+				  					<h5>Get up to 50% off Today Only!</h5>
+									<h2>Woman Fashion</h2>
+									<a href="#">
+										<div class="shop-now-button">SHOP NOW</div>
+									</a>
+				  				</div>
+				  			</div>
+				  		</div>
+					</div>
+				</div>
 		</div>
 
 		<div class="slider-img mySlides fade">
 		  <img src="img/banner2.jpg">
+		  	<div class="slide-content-container">
+		  		<div class="container">
+			  		<div class="row">
+			  			<div class="col">
+			  				<div class="banner">
+			  					<h5>50% off in all products</h5>
+								<h2>Man Fashion</h2>
+								<a href="#">
+									<div class="shop-now-button">SHOP NOW</div>
+								</a>
+			  				</div>
+			  			</div>
+			  		</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="slider-img mySlides fade">
 		  <img src="img/banner3.jpg">
+		  	<div class="slide-content-container">
+		  		<div class="container">
+			  		<div class="row">
+			  			<div class="col">
+			  				<div class="banner">
+			  					<h5>Taking your Viewing Experience to Next Level</h5>
+								<h2>Summer Sale</h2>
+								<a href="#">
+									<div class="shop-now-button">SHOP NOW</div>
+								</a>
+			  				</div>
+			  			</div>
+			  		</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -49,7 +98,7 @@
 	  }
 	  slides[slideIndex-1].style.display = "block";  
 	  dots[slideIndex-1].className += " active";
-	  setTimeout(showSlides, 5000);
+	  setTimeout(showSlides, 5500);
 	}
 </script>
 </body>

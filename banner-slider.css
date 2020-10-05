@@ -53,7 +53,7 @@ img {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color .6s ease;
 }
 
 .active {
@@ -62,21 +62,142 @@ img {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1}
 }
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+.slide-content-container{
+	box-sizing: border-box;
+	color: #646a7c;
+	font-family: Poppins,sans-serif;
+	font-size: 14px;
+	left: 0;
+	line-height: 21px;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 40%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.container{
+	box-sizing: border-box;
+	color: #646a7c;
+	font-family: Poppins,sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+	width: 100%;
+}
+
+.row{
+	box-sizing: border-box;
+	color: #646a7c;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Poppins,sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-left: -15px;
+	margin-right: -15px;
+	text-align: left;
+}
+
+.col{
+	box-sizing: border-box;
+	color: #646a7c;
+	flex: 0 0 66.6667%;
+	font-family: Poppins,sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	max-width: 66.6667%;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+
+.banner{
+	box-sizing: border-box;
+	color: #646a7c;
+	font-family: Poppins,sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	overflow: hidden;
+	text-align: left;
+}
+
+h2, h5{
+	color: rgb(41, 43, 44);
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+h5{
+	font-weight: 300;
+	font-size: 1.25rem;
+	margin-bottom: 0;
+	animation: slideInLeft;
+	animation-duration: 1s;
+}
+
+h2{
+	display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 60px;
+    animation: slideInLeft;
+	animation-duration: 2s;
+}
+
+.shop-now-button{
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 12px 35px;
+    font-size: 1rem;
+    border: 1px solid #FF324D;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #FF324D;
+    transition: all .35s;
+    animation: slideInLeft;
+	animation-duration: 2.2s;
+}
+
+.shop-now-button:hover{
+	background-color: transparent;
+	color: #FF324D;
 }
