@@ -8,8 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="banner-slider.css">
 	<link rel="stylesheet" type="text/css" href="product-item.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;400&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;500;400&display=swap');
 	</style>
 </head>
 <body>
@@ -105,29 +106,89 @@
 				</div>
 			</div>
 		</div>
-		<div class="info-wrapper"></div>
+		<div class="info-wrapper">
+			<div class="name info">Light Blue Shirt</div>
+			<div class="price info">
+				<del style="float: left;">$89.00</del>
+				<ins class="present">$69.00</ins>
+			</div>
+			<div class="rating info" style="color: #ffb410">
+				<i class="zmdi zmdi-star"></i>
+				<i class="zmdi zmdi-star"></i>
+				<i class="zmdi zmdi-star"></i>
+				<i class="zmdi zmdi-star"></i>
+				<i class="zmdi zmdi-star-outline"></i>
+			</div>
+		</div>
 	</div>
 
-<script>
-	var slideIndex = 0;
-	showSlides();
+	<br>
+	<!-- header -->
+	<div class="top-header">
+		<div class="header-container">
+			<div class="left-header">
+				<div class="item-header">English
+					<i class="h zmdi zmdi-chevron-down"></i>
+				</div>
+				<div class="item-header">USD
+					<i class="h zmdi zmdi-chevron-down"></i>
+				</div>
+			</div>
+			<div class="right-header">
+				<div class="item-header">
+					<i class="h zmdi zmdi-favorite-outline"></i>
+				Wishlist</div>
+				<div class="item-header">
+					<i class="h zmdi zmdi-sign-in"></i>
+				Sign In</div>
+				<div class="item-header">
+					<i class="h zmdi zmdi-account-o"></i>
+				Sign Up</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-header">
+		<div class="bot-header-container">
+			<div class="left-header" style="height: 67px; padding: 10px 0">
+				<img src="img/logo2.png">
+			</div>
+			<div class="right-header">
+				<div class="menu">
+					<ul class="menu-bar">
+						<li>HOME</li>
+						<li style="margin-right: 5px" class="has-submenu">PRODUCTS<i class="h zmdi zmdi-chevron-down"></i>
+							<ul class="sub-menu">
+								<ul class="sub-menu-list" style="float: left;">
+									<li style="font-weight: 500">WOMEN</li>
+									<li>Black Dress For Woman</li>
+									<li>Blue Casual Check Shirt</li>
+									<li>Blue Dress For Woman</li>
+									<li>Lether Gray Tuxedo</li>
+									<li>T-Shirt Form Girls</li>
+								</ul>
+								<ul class="sub-menu-list" style="float: right;">
+									<li style="font-weight: 500">MEN</li>
+									<li>Light Blue Shirt</li>
+									<li>Men Blue Jins Shirt</li>
+									<li>Red & Black Check Shirt</li>
+									<li>T-Shirt</li>
+									<li>White Black Line Dress</li>
+								</ul>
+							</ul>
+						</li>
+						<li>SHOP</li>
+						<li>BLOG</li>
+						<li>CONTACT US</li>
+					</ul>
+				</div>
+				<div class="right-menu-icon">
+					<div class="right1"><i class="zmdi zmdi-search"></i></div>
+					<div class="right1"><i class="zmdi zmdi-shopping-cart"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	function showSlides() {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-	  for (i = 0; i < slides.length; i++) {
-	    slides[i].style.display = "none";  
-	  }
-	  slideIndex++;
-	  if (slideIndex > slides.length) {slideIndex = 1}    
-	  for (i = 0; i < dots.length; i++) {
-	    dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	  setTimeout(showSlides, 5500);
-	}
-</script>
+<script type="text/javascript" src="showSlide.js"></script>
 </body>
 </html>

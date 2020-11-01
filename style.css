@@ -2,4 +2,86 @@ html, body{
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.full-wrapper{
+	display: grid;
+}
+.list-title{
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 60px auto 30px;
+	text-align: center;
+}
+.filter-tag{
+	display: flex;
+	justify-content: space-around;
+	width: 500px;
+	margin: auto;
+	font-weight: 500;
+	font-size: 15px;
+}
+.tag-select:hover{
+	color: #FF324D;
+	cursor: pointer;
+	transition: all .2s;
+}
+.row-product{
+	display: flex;
+	justify-content: space-around;
+	width: 1140px;
+	margin: 20px auto;
+}
+.brand{
+	width: 1140px;
+	height: 200px;
+	background-color: #FFF1F1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+}
+.brand img{
+	opacity: 0.7;
+    width: 163px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    height: 50px;
+}
+.footer{
+	width: 100%;
+	height: 200px;
+	background-color: #FFF1F1;
+}
+.footer-2{
+	display: flex;
+	align-items: center;
+	height: 150px;
+	justify-content: space-around;
+}
+.foot-text{
+	font-size: 2rem;
+	color: white;
+	font-weight: 700;
+}
+.footer-2 input{
+ 	width: 400px;
+ 	height: 50px;
+ 	padding: 10px;
+ 	outline: none;
+
+}
+.footer-2 button{
+	height: 50px;
+	width: 100px;
+	color: white;
+	background-color: #555;
+	font-weight: 700;
+	font-size: 16px;
+	border: none;
+}
+.footer-2 button:hover{
+	color: #FF324D;
+	transition: all .2s;
+	cursor: pointer;
 }

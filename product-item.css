@@ -3,12 +3,39 @@
 	width: 262px;
 	height: 385px;
 	box-shadow: 0 0 10px #e2e2e2;
-	margin: 20px auto;
+	margin: 10px;
 }
 .product-image{
 	height: 280px;
 	background-image: url(img/product/product_img4-1.jpg);
 	background-size: cover;
+}
+.no2{
+	background-image: url(img/product/product_img1-1.jpg);
+}
+.no3{
+	background-image: url(img/product/product_img3-1.jpg);
+}
+.no4{
+	background-image: url(img/product/product_img6-1.jpg);
+}
+.no5{
+	background-image: url(img/product/product_img7-1.jpg);
+}
+.no6{
+	background-image: url(img/product/product_img8-1.jpg);
+}
+.no7{
+	background-image: url(img/product/product_img9-1.jpg);
+}
+.no8{
+	background-image: url(img/product/product_img11-1.jpg);
+}
+.no9{
+	background-image: url(img/product/product_img2-1.jpg);
+}
+.no10{
+	background-image: url(img/product/product_img5-1.jpg);
 }
 .overlay{
 	background: rgba(0, 0, 0, .3);
@@ -50,4 +77,22 @@
 .button:hover{
 	background-color: #FF324D;
 	color: white;
+}
+.info{
+	margin: 13px;
+	font-size: 16px;
+}
+.name{
+	font-weight: 500;
+}
+.present{
+	text-decoration: none;
+	margin-left: 5px;
+	color: #FF324D;
+	font-weight: 500;
+}
+.name:hover{
+	color: #FF324D;
+	transition: all .2s;
+	cursor: pointer; 
 }
